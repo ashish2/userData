@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1=title
+	form#formAddUser.inp-class(name="adduser", method="post",action="/user/c")
+		input#inputUserName(type="text", placeholder="Username",name="username")
+		input#inputUserEmail(type="text", placeholder="Email",name="useremail")
+		button#btnSubmit(type="submit") Submit
+
